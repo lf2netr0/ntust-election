@@ -8,10 +8,10 @@ start_api為api入口
 
 ```py
 import falcon
-import post_token
+from server import post_token
 
 
-post=post_token.post()
-app=falcon.API()
-app.add_route('/token',post)＃新增route，以此類推
+token = post_token.post()
+app = falcon.API()
+app.add_route('/token',token)＃新增route，以此類推
 ```
