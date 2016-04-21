@@ -1,0 +1,6 @@
+falcon==0.3.0
+python-mimeparse==1.5.1
+six==1.10.0
+setuptools==20.9.0
+wheel==0.29.0
+mysql-connector-python==2.1.3
