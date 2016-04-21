@@ -16,19 +16,18 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Election`
+-- Table structure for table `token_prepare`
 --
 
-DROP TABLE IF EXISTS `Election`;
+DROP TABLE IF EXISTS `token_prepare`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Election` (
+CREATE TABLE `token_prepare` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `e_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `solgan` char(2) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `dates` date DEFAULT NULL,
+  `token` char(5) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `enabled` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=100000 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

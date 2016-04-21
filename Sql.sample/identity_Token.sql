@@ -24,23 +24,14 @@ DROP TABLE IF EXISTS `Token`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Token` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `token` text,
+  `token` text COLLATE utf8_unicode_ci,
   `election_id` int(11) DEFAULT NULL,
-  `student_id` text,
-  `gettoken_time` time DEFAULT NULL,
+  `student_id` text COLLATE utf8_unicode_ci,
+  `gettoken_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `enabled` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `Token`
---
-
-LOCK TABLES `Token` WRITE;
-/*!40000 ALTER TABLE `Token` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Token` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -51,4 +42,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-04-20 21:40:43
+-- Dump completed on 2016-04-21 18:22:07
