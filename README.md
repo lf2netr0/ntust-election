@@ -30,9 +30,10 @@ creat_project.py(專案ID,投票人檔案名稱)
 ##啟動api
 api.py為api入口
 
-'/token' POST為取得授權碼（project_id, student_id or cardID）,DELETE為更改授權碼使用狀態（token,project_id）
-'/elector' GET為根據取得學生資料(project_id, student_id or cardID)
-'/verify' GET為驗證該授權碼為可否使用之狀態(token,project_id)
+'/token' POST為取得授權碼（project_id, student_id or cardID）\n
+         DELETE為更改授權碼使用狀態（token,project_id）\n
+'/elector' GET為根據取得學生資料(project_id, student_id or cardID)\n
+'/verify' GET為驗證該授權碼為可否使用之狀態(token,project_id)\n
 
 ##驗證授權碼擁有者
 test_owner.py(Token,Project_id)
