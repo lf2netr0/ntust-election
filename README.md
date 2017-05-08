@@ -1,6 +1,6 @@
-#ntust-election-identify
+# ntust-election-identify
 
-##設定檔
+## 設定檔
 根據config_sample.py建立
 ```py
 config = {
@@ -21,13 +21,13 @@ config = {
     'text': 'text file name'
 }
 ```
-##建立資料表
+## 建立資料表
 install.py
 
-##匯入專案投票人資料
+## 匯入專案投票人資料
 creat_project.py(專案ID,投票人檔案名稱)
 
-##啟動api
+## 啟動api
 api.py為api入口
 
 <br>
@@ -37,5 +37,5 @@ api.py為api入口
 '/verify' <br>GET為驗證該授權碼為可否使用之狀態(token,project_id)<br>
 
 
-##驗證授權碼擁有者
+## 驗證授權碼擁有者
 test_owner.py(Token,Project_id)
